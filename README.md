@@ -1,16 +1,73 @@
-# notes_assignment
+Flutter Notes App – Firebase + BLoC
 
-A new Flutter project.
+This repository contains a **Flutter Notes application** built as part of a technical assignment.  
+The app demonstrates authentication, secure CRUD operations, clean UI, and state management using **BLoC**.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+Features
 
-A few resources to get you started if this is your first Flutter project:
+- Email & Password Authentication (Firebase Auth)
+- Secure Notes CRUD (Cloud Firestore)
+- User-specific data isolation (notes are private per user)
+- Persistent login session
+- Material 3 UI with card-based layout
+- State management using BLoC
+- Android APK build provided
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Additional Features Implemented
+- ✅ Client-side search notes by title (**Option B**)
+- ✅ Graceful error handling when offline or when data cannot be fetched (**Option A**)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+> Although the assignment required only one option, both were implemented without affecting core functionality.  
+> Each feature can be evaluated independently.
+
+---
+
+Tech Stack
+
+- Flutter
+- Firebase Authentication
+- Cloud Firestore
+- flutter_bloc (BLoC pattern)
+- Android (APK build)
+
+No backend services other than Firebase were used.
+
+---
+
+Authentication
+
+- Email & password based authentication using **Firebase Auth**
+- Login session persists across app restarts using Firebase’s built-in session handling
+- Logout functionality included
+
+---
+
+Notes Data Model
+
+Collection:
+
+Each note document contains:
+
+| Field        | Type       |
+|-------------|------------|
+| `id`        | String (Firestore document ID) |
+| `title`     | String     |
+| `content`   | String     |
+| `created_at`| Timestamp |
+| `updated_at`| Timestamp |
+| `user_id`   | String (Firebase Auth UID) |
+
+---
+
+Data Security & Access Control
+
+- Notes are queried using `user_id == auth.uid`
+- Firestore Security Rules enforce:
+  - Users can **only read/write/update/delete their own notes**
+  - Cross-user data access is blocked at the database level
+
+Firestore Rule (summary):
+allow read, write: if request.auth != null
+&& resource.data.user_id == request.auth.uid;
