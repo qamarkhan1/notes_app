@@ -1,0 +1,90 @@
+{
+  "project_info": {
+    "project_number": "260131193717",
+    "project_id": "beren-ev-yemekleri",
+    "storage_bucket": "beren-ev-yemekleri.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:260131193717:android:b1a232fea40485a4ae093c",
+        "android_client_info": {
+          "package_name": "com.qamar.notes_assignment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "260131193717-dlus6noks6n0ks9irqotlp3plrfkp8q0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuG_gszqaFNG62fg9D64t2jRLnD57g9pQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "260131193717-6vnb2bpm7hfgi8qrfg6b9r1qo0k2n34b.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "260131193717-5hm2g4uol1j1bo2q44s476t6etkt55fh.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.the313solutions.wowqrmenu"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:260131193717:android:4ea0618763351368ae093c",
+        "android_client_info": {
+          "package_name": "com.the313solutions.wowqrmenu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "260131193717-77dcur7frc9n3enu0lmtqjr2pe8b9812.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.the313solutions.wowqrmenu",
+            "certificate_hash": "43463f735062c7b658eace0f53ba15f30892c47a"
+          }
+        },
+        {
+          "client_id": "260131193717-dlus6noks6n0ks9irqotlp3plrfkp8q0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuG_gszqaFNG62fg9D64t2jRLnD57g9pQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "260131193717-6vnb2bpm7hfgi8qrfg6b9r1qo0k2n34b.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "260131193717-5hm2g4uol1j1bo2q44s476t6etkt55fh.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.the313solutions.wowqrmenu"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
